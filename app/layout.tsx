@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SignatureIntro from "@/components/SignatureIntro";
 import SignatureWatermark from "@/components/SignatureWatermark";
+import CampaignBanner from "@/components/CampaignBanner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -55,6 +56,7 @@ export default function RootLayout({
       >
         <SignatureIntro />
         <Navbar />
+        <CampaignBanner />
         <main className="pt-16">{children}</main>
         <SignatureWatermark />
       </body>
